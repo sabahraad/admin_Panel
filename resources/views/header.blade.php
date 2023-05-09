@@ -3,8 +3,8 @@
 		
 			
         <div class="m-header">
-        
-        <img src="{{asset('images/ecourier.jpg')}}"  class="img-radius" alt="User-Profile-Image" style="width: 236px;border-radius: 0;height: 61px;">
+        <h1 style="color: #f9fdff;">eCourier</h1>
+        <!-- <img src="{{asset('images/ecourier.jpg')}}"  class="img-radius" alt="User-Profile-Image" style="width: 236px;border-radius: 0;height: 61px;"> -->
 
         </div>
         <div class="collapse navbar-collapse">
@@ -24,20 +24,19 @@
                 <li>
                     <div class="dropdown drp-user">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="feather icon-user"></i>
+                            <i class="feather icon-user" style="padding-right: 8px;"> </i> Profile
                         </a>
                         <div class="dropdown-menu dropdown-menu-right profile-notification">
                             <div class="pro-head">
                                 <img src="{{asset('images/avatar-2.jpg')}}"  class="img-radius" alt="User-Profile-Image">
-                                <span>John Doe</span>
-                                <a href="auth-signin.html" class="dud-logout" title="Logout">
-                                    <i class="feather icon-log-out"></i>
+                                <span>{{ auth()->user()->name }}</span>
+                                <a href="{{route('logout')}}" class="dud-logout" title="Logout">
+                                    <i class="feather icon-log-out"></i> 
                                 </a>
                             </div>
                             <ul class="pro-body">
-                                <li><a href="user-profile.html" class="dropdown-item"><i class="feather icon-user"></i> Profile</a></li>
-                                <li><a href="email_inbox.html" class="dropdown-item"><i class="feather icon-mail"></i> My Messages</a></li>
-                                <li><a href="auth-signin.html" class="dropdown-item"><i class="feather icon-lock"></i> Lock Screen</a></li>
+                                <li><a href="{{route('viewProfile')}}" class="dropdown-item"><i class="feather icon-user"></i> Profile</a></li>
+                                <li><a href="{{route('logout')}}" class="dropdown-item"><i class="feather icon-log-out"></i> Logout</a></li>
                             </ul>
                         </div>
                     </div>
@@ -45,7 +44,11 @@
             </ul>
         </div>
         
+       
     
 </header>
+
 <!-- [ Header ] end -->
+
+
 

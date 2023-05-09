@@ -46,6 +46,21 @@
         .dataTables_length{
             display: inline-block;
         }
+        .dataTables_wrapper .paginate_button {
+            background-color: rgb(140 221 205);
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            color: #333;
+            cursor: pointer;
+            display: inline-block;
+            margin-left: 5px;
+            padding: 5px 10px;
+        }
+
+        .dataTables_wrapper .paginate_button:hover {
+            background-color: #ccc;
+            color: #fff;
+        }
     </style>
 
 </head>
@@ -63,7 +78,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-12">
                         <div class="page-header-title">
-                            <h5 class="m-b-10">Ecurrier</h5>
+                            <h5 class="m-b-10">eCourier</h5>
                         </div>
                         <!-- <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
@@ -130,7 +145,11 @@
     </div>
 </section>
 
-
+<!-- Required Js -->
+<script src="{{asset('js/vendor-all.min.js')}}" ></script>
+    <script src="{{asset('js/plugins/bootstrap.min.js')}}" ></script>
+    <script src="{{asset('js/pcoded.min.js')}}" ></script>
+    
         <!-- datatable -->
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
         <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
@@ -139,10 +158,7 @@
         <script src="https://cdn.datatables.net/buttons/2.3.2/js/buttons.html5.min.js"></script>
         <!-- datatable end -->
 
-        <!-- Required Js -->
-    <script src="{{asset('js/vendor-all.min.js')}}" ></script>
-    <script src="{{asset('js/plugins/bootstrap.min.js')}}" ></script>
-    <script src="{{asset('js/pcoded.min.js')}}" ></script>
+        
 
     <script>
             $(document).ready(function() {
