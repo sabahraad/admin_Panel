@@ -1,6 +1,10 @@
 	<!-- [ navigation menu ] start -->
 	<link rel="stylesheet" href="{{asset('css/style.css')}}">
-
+<style>
+	.pcoded-navbar .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li > a:before{
+		content: "";
+	}
+</style>
 <nav class="pcoded-navbar  ">
 		<div class="navbar-wrapper  ">
 			<div class="navbar-content scroll-div " >
@@ -31,10 +35,10 @@
 					    <a href="{{route('bookParcel')}}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Book a Parcel</span></a>
 					</li>
 					<li class="nav-item pcoded-hasmenu">
-					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="feather icon-layout"></i></span><span class="pcoded-mtext">Page layouts</span></a>
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="feather icon-layout"></i></span><span class="pcoded-mtext">Withdraw</span></a>
 					    <ul class="pcoded-submenu">
-					        <li><a href="layout-vertical.html" target="_blank">Vertical</a></li>
-					        <li><a href="layout-horizontal.html" target="_blank">Horizontal</a></li>
+					        <li><a href="{{route('Withdraw')}}" ><img src="{{asset('images/icons8-withdraw-64.png')}}" style="width: 33px;"class="img-radius" alt="User-Profile-Image">Withdraw Money</a></li>
+					        <li><a href="{{route('WithdrawList')}}" ><img src="{{asset('images/icons8-list-64.png')}}" style="width: 33px;" alt="User-Profile-Image">Withdraw List</a></li>
 					    </ul>
 					</li>
 					<li class="nav-item pcoded-menu-caption">

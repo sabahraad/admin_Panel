@@ -12,7 +12,7 @@
   <div class="formbold-form-wrapper">
     <form action="https://formbold.com/s/FORM_ID" method="POST" style="padding: 32px;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,.1);">
+    box-shadow: 2px 2px 10px rgba(0,0,0,.3);">
         <div class="formbold-steps">
             <ul>
                 <li class="formbold-step-menu1 active">
@@ -178,7 +178,7 @@
           <div class="formbold-form-confirm">
           <div class="formbold-input-flex">
             <div>
-                <label for="firstname" class="formbold-form-label"> Recipient name </label>
+                <label for="firstname" class="formbold-form-label"> Parcel</label>
                 <input
                 type="text"
                 name="firstname"

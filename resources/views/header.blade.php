@@ -21,7 +21,26 @@
                 
             </ul>
             <ul class="navbar-nav ml-auto">
-                <li>
+                <li style="margin-left: 515px;">
+                    <div class="dropdown drp-user">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="{{asset('images/icons8-money-bag-50 (2).png')}}" style="width: 33px;padding-right: 8px;" alt="User-Profile-Image">30000
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right profile-notification">
+                            <div class="pro-head">
+                                <span>{{ auth()->user()->name }}</span>
+                            </div>
+                            <ul class="pro-body">
+                                <li><a href="{{route('Withdraw')}}" class="dropdown-item"><img src="{{asset('images/icons8-withdraw-64.png')}}" style="width: 33px;"class="img-radius" alt="User-Profile-Image"> Withdraw</a></li>
+                                <li><a href="{{route('WithdrawList')}}" class="dropdown-item"><img src="{{asset('images/icons8-list-64.png')}}" style="width: 33px;" alt="User-Profile-Image"> Withdraw List</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+                <li >
                     <div class="dropdown drp-user">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <i class="feather icon-user" style="padding-right: 8px;"> </i> Profile
